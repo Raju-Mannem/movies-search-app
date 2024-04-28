@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-
+import './App.css'
 const App = () => {
   const [search,setSearch] = useState('');
   const [data,setData] = useState([]);
@@ -27,7 +27,7 @@ const App = () => {
       });
   };
   return (
-    <div>
+    <div className='sr-div'>
         <center>
           <h1>Search Your Favorite Movie</h1>
           <form onSubmit={submitHandler}>
